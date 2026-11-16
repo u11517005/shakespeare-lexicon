@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE BARD'S LEXICON｜莎翁文青詞典 A–Z</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400;1,600&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="subtitle-top">Anno Domini 1564 – 1616 · First Folio Edition</div>
+    <h1>THE BARD'S LEXICON</h1>
+    <p class="intro-text">從 A 到 Z 精選二十六個莎士比亞原著靈魂詞彙。在印象派光影與劇本金句之中，細讀伊莉莎白時代的愛慾、權力與幽微人性。</p>
+  </header>
+
+  <nav class="alpha-nav" aria-label="字母索引導覽">
+    <div class="alpha-container" id="alphaNav">
+      <button class="alpha-btn all-btn active" data-letter="ALL">ALL</button>
+    </div>
+  </nav>
+
+  <div id="toastNotification" class="toast" role="status" aria-live="polite"></div>
+
+  <main id="lexiconGrid"></main>
+
+  <footer>
+    <p>“We are such stuff as dreams are made on.” — <em>The Tempest</em>, Act 4, Scene 1</p>
+  </footer>
+
+  <audio id="globalAudioPlayer" preload="none"></audio>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
