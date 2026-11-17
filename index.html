@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore 26 Shakespearean words through classic quotations, pronunciation audio, Chinese meanings, and impressionist-inspired paintings.">
+  <title>Shakespeare’s Words｜莎士比亞 A–Z 詞彙圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wash"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首頁"><span class="brand-mark">❧</span><span><strong>Shakespeare’s Words</strong><small>Learn. Listen. Be Inspired.</small></span></a>
+    <nav><a href="#top">首頁</a><a href="#explore">A–Z 詞彙</a><a href="#about">關於本圖鑑</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITERARY JOURNEY · 26 WORDS</p>
+        <h1>在莎士比亞的<br><em>字裡行間</em> 漫遊</h1>
+        <p class="hero-sub">從 A 到 Z，收藏劇本裡的詞彙、詩意與人生。</p>
+        <a class="primary-link" href="#explore">開始探索 <span>↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="印象派風格的城堡與花園插畫"><div class="art-caption">WORDS THAT LIVE FOREVER</div></div>
+      <div class="hero-note">“The play’s the thing.”<small>— Hamlet</small></div>
+    </section>
+
+    <section class="intro-strip" id="explore">
+      <div><span class="eyebrow">THE ALPHABET OF SHAKESPEARE</span><h2>Explore by Alphabet</h2></div>
+      <p>選擇一個字母，打開一段文學記憶。</p>
+    </section>
+    <div class="alphabet" id="alphabet" aria-label="字母導覽"></div>
+
+    <section class="learning-layout" aria-live="polite">
+      <article class="art-panel">
+        <img id="wordImage" src="assets/images/A.jpg" alt="詞彙主題印象派油畫">
+        <div class="image-caption"><span id="imageLetter">A</span><span>AN IMPRESSIONIST MOMENT</span></div>
+      </article>
+      <article class="lesson-panel">
+        <div class="lesson-topline"><span class="eyebrow" id="entryIndex">WORD 01 / 26</span><span class="bookmark" id="bookmark" title="標記已學習" aria-label="標記已學習">☆</span></div>
+        <div class="word-heading"><span class="initial" id="initial">A</span><div><h2 id="word">Ambition</h2><p class="phonetic" id="part">noun</p></div></div>
+        <p class="meaning" id="meaning">野心；雄心</p>
+        <p class="definition" id="definition">a strong desire to achieve success or power</p>
+        <div class="audio-block"><div class="audio-label"><span>01</span><div><strong>Listen to the word</strong><small>單字發音</small></div></div><audio id="wordAudio" controls preload="none"><source src="assets/audio/words/A.mp3" type="audio/mpeg">您的瀏覽器不支援音訊播放。</audio></div>
+        <div class="quote-rule"><span>✦</span></div>
+        <div class="quote-heading"><span class="eyebrow">IN SHAKESPEARE’S WORDS</span><span class="quote-mark">“ ”</span></div>
+        <blockquote id="quote">“Vaulting ambition, which o’erleaps itself / And falls on the other.”</blockquote>
+        <div class="play-source"><span id="play">Macbeth</span><span id="scene">Act 1, Scene 7</span></div>
+        <div class="audio-block quote-audio"><div class="audio-label"><span>02</span><div><strong>Listen to the quotation</strong><small>經典名句朗讀</small></div></div><audio id="quoteAudio" controls preload="none"><source src="assets/audio/quotes/A.mp3" type="audio/mpeg">您的瀏覽器不支援音訊播放。</audio></div>
+        <div class="lesson-actions"><button id="prevBtn" class="secondary-btn" type="button">← 上一個</button><button id="nextBtn" class="secondary-btn" type="button">下一個 →</button></div>
+      </article>
+    </section>
+
+    <section class="all-words">
+      <div class="section-title"><div><span class="eyebrow">A SMALL COLLECTION OF BIG IDEAS</span><h2>Words to Remember</h2></div><span class="count">26 WORDS · ONE PLAYWRIGHT</span></div>
+      <div class="word-grid" id="wordGrid"></div>
+    </section>
+
+    <section class="about" id="about"><div class="about-flourish">❧</div><span class="eyebrow">ABOUT THIS COLLECTION</span><h2>Read a word. Hear a voice.<br><em>Enter a world.</em></h2><p>本圖鑑以莎士比亞戲劇中的經典語句為起點，透過詞彙、聲音與圖像，重新感受英文的韻律與文學的魅力。每個音檔皆為獨立檔案，歡迎錄製自己的聲音並替換。</p><div class="about-credit">A–Z · SHAKESPEARE · LITERATURE · ART</div></section>
+  </main>
+  <footer><span>Shakespeare’s Words</span><span>Words from the stage, for the ages.</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="vocabulary.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
